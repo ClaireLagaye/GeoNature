@@ -1,6 +1,0 @@
-cfAll:
-  credentials: [[ administrateur, redacteur ]]
-  is_secure: true
-cfXls:
-  credentials: [[ administrateur, redacteur ]]
-  is_secure: true
