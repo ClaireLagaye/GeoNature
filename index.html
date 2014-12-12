@@ -37,7 +37,6 @@
 									<a class="gn-icon gn-icon-search"><span>Rechercher</span></a>
 								</li>
 								<li><a href="#apropos" class="gn-icon gn-icon-download">A propos</a></li>
-								<li><a href="#equipe" class="gn-icon gn-icon-cog">L'équipe</a></li>
 								<li><a href="#service" class="gn-icon gn-icon-cog">Fonctionnalités</a></li>
 								<li><a href="#captures" class="gn-icon gn-icon-help">Captures</a></li>
 								<li><a href="#contact" class="gn-icon gn-icon-archive">Contact</a></li>
@@ -91,54 +90,44 @@
 			<p><img src="https://github.com/PnEcrins/FF-synthese/raw/master/docs/images/schema-general.jpg"/></p>
 		</div>
 		
-        <div class="row" id="equipe">
-            <h2>L'équipe</h2>
-			<p>De choc !</p>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-
-                <div class="team boxed-grey">
-                    <div class="inner">
-						<h5>Amandine Sahl</h5>
-                        <p class="subtitle">Développeuse déchainée</p>
-                        <div class="avatar"><img src="img/team/1.jpg" alt="" class="img-responsive" /></div>
-                    </div>
-                </div>
+		<div>
+			<h2>Fonctionnement</h2>
+			<p>1- Les données sources de chaque protocole</p>
+			<p>
+			<ul>
+				<li>Chaque protocole dispose d'un schéma dédié dans la BDD.</li>
+				<li>Il est possible de créer autant de protocoles (et donc de schémas) que souhaité.</li>
+				<li>Les tables de chaque schéma des protocoles correspondent aux besoins et aux champs spécifiques de ceux-ci.</li>
+				<li>Ces tables des protocoles sont alimentées directement par des applications web ou mobiles ou indirectement par des sources externes (tableurs, BDD, SIG, GPX...), éventuellement automatisés par un ETL (Extract Transform Load comme Talend).</li>
+				<li>L'application est fournie avec les schémas et applications web des protocoles Contact faune vertébrés, invertébrés et mortalité.</li>
+				<li>A chaque fois qu'une donnée (observation) est insérée, modifiée ou supprimée dans une table d'un des protocoles, un trigger (déclencheur automatique dans la BDD) lance une requête SQL venant mettre à jour le schéma de synthèse.</li>
+				<li>Les protocoles sont listés dans la table bib_sources du schéma synthese.</li>
+			</ul>
+			</p>
+			<p>2 - La synthèse des données de tous les protocoles</p>
+			<p>
+			Elle regroupe les données de tous les protocoles avec uniquement leurs champs communs "Qui a vu Quoi Où et Quand + Comment ?" (Observateur, taxon, localisation, date, protocole).
+			Elle est alimentée automatiquement à chaque fois qu'une donnée est saisie dans le schéma d'un protocole.
+			L'application fournie permet de consulter l'ensemble de ces données, de les filtrer (par taxon, statut, date, période, observateur, source, commune, secteur, zone réglementaire ou dessinée), de les exporter (tableur ou SIG) ou d'éditer la donnée source si une application web est disponible pour le protocole source
+			</p>
+			<p>
+			3 - Export partenaires
+			</p>
+			<p>
+			Une vue par partenaire...
+			...
+			</p>
+			<p>
+			4 - Taxref
+			</p>
+			<p>
+			Toutes les données s'appuient sur Taxref....
+			...
+			</p>
+			<p>
+		</div>
 		
-            </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-
-                <div class="team boxed-grey">
-                    <div class="inner">
-						<h5>Kisito Cendrier</h5>
-                        <p class="subtitle">Serbo-croate non identifié</p>
-                        <div class="avatar"><img src="img/team/2.jpg" alt="" class="img-responsive" /></div>
-                    </div>
-
-				</div>
-            </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
 		
-                <div class="team boxed-grey">
-                    <div class="inner">
-						<h5>Camille MONCHICOURT</h5>
-                        <p class="subtitle">Touriste</p>
-                        <div class="avatar"><img src="img/team/3.jpg" alt="" class="img-responsive" /></div>
-                    </div>
-                </div>
-		
-            </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-		
-                <div class="team boxed-grey">
-                    <div class="inner">
-						<h5>Gil Deluermoz</h5>
-                        <p class="subtitle">Développeur envoûté</p>
-                        <div class="avatar"><img src="img/team/4.jpg" alt="" class="img-responsive" /></div>
-                    </div>
-                </div>
-	
-            </div>
-        </div>		
 		</div>
 	</section>
 	<!-- /Section: about -->
