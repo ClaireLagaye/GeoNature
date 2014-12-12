@@ -38,6 +38,8 @@
 								</li>
 								<li><a href="#apropos" class="gn-icon gn-icon-download">A propos</a></li>
 								<li><a href="#service" class="gn-icon gn-icon-cog">Fonctionnalités</a></li>
+								<li><a href="#principes" class="gn-icon gn-icon-cog">Principes</a></li>
+								<li><a href="#contexte" class="gn-icon gn-icon-cog">Contexte</a></li>
 								<li><a href="#captures" class="gn-icon gn-icon-help">Captures</a></li>
 								<li><a href="#contact" class="gn-icon gn-icon-archive">Contact</a></li>
 							</ul>
@@ -76,62 +78,27 @@
 						<p>Application de synthèse des observations faune et flore.</p>
 						<p>Elle regroupe toutes les données des différents protocoles FAUNE et FLORE en les limitant au niveau QUI QUOI QUAND OU.</p>
 						<p>Principe général : Un protocole = Un outil = Une BDD + Une BDD et une application de SYNTHESE regroupant les données des différents protocoles sur la base des champs communs à tous les protocoles (QUI a vu QUOI, OU et QUAND).</p>
+						<p><b>A REVOIR car il ne s'agit pas uniquement de la SYNTHESE</b></p>
 						<p>Code source, suivi des versions et des tickets sur <a href="https://github.com/PnEcrins/FF-synthese" target="_blank">https://github.com/PnEcrins/FF-synthese</a></p>
 						<p>Documentation (serveur, applications, base de données) sur <a href="http://ff-synthese.rtfd.org" target="_blank">http://ff-synthese.rtfd.org</a></p>
+						<p>Testez l'application ! <a href="" target="">test.com</a></p>
+						<p><b>Technologies</b></p>
+						<p><u>Langages</u> : PHP, HTML, JS, CSS</p>
+						<p><u>BDD</u> : PostgreSQL, PostGIS</p>
+						<p><u>Serveur</u> : Debian ou Ubuntu</p>
+						<p><u>Framework PHP</u> : Symfony</p>
+						<p><u>Framework JS</u> : ExtJS</p>
+						<p><u>Framework carto</u> : GeoExtJS, MapFish et Openlayers</p>
+						<p><u>Serveur carto</u> : MapServer</p>
+						<p><u>Fonds rasters</u> : Geoportail, OpenStreetMap, Google Maps, WMS</p>
 					</div>
 			
 				</div>
 			</div>
 			</div>
 		</div>
-		<div class="container">
-		
-		<div class="row">
-			<p><img src="https://github.com/PnEcrins/FF-synthese/raw/master/docs/images/schema-general.jpg"/></p>
-		</div>
-		
-		<div>
-			<h2>Fonctionnement</h2>
-			<p>1- Les données sources de chaque protocole</p>
-			<p>
-			<ul>
-				<li>Chaque protocole dispose d'un schéma dédié dans la BDD.</li>
-				<li>Il est possible de créer autant de protocoles (et donc de schémas) que souhaité.</li>
-				<li>Les tables de chaque schéma des protocoles correspondent aux besoins et aux champs spécifiques de ceux-ci.</li>
-				<li>Ces tables des protocoles sont alimentées directement par des applications web ou mobiles ou indirectement par des sources externes (tableurs, BDD, SIG, GPX...), éventuellement automatisés par un ETL (Extract Transform Load comme Talend).</li>
-				<li>L'application est fournie avec les schémas et applications web des protocoles Contact faune vertébrés, invertébrés et mortalité.</li>
-				<li>A chaque fois qu'une donnée (observation) est insérée, modifiée ou supprimée dans une table d'un des protocoles, un trigger (déclencheur automatique dans la BDD) lance une requête SQL venant mettre à jour le schéma de synthèse.</li>
-				<li>Les protocoles sont listés dans la table bib_sources du schéma synthese.</li>
-			</ul>
-			</p>
-			<p>2 - La synthèse des données de tous les protocoles</p>
-			<p>
-			Elle regroupe les données de tous les protocoles avec uniquement leurs champs communs "Qui a vu Quoi Où et Quand + Comment ?" (Observateur, taxon, localisation, date, protocole).
-			Elle est alimentée automatiquement à chaque fois qu'une donnée est saisie dans le schéma d'un protocole.
-			L'application fournie permet de consulter l'ensemble de ces données, de les filtrer (par taxon, statut, date, période, observateur, source, commune, secteur, zone réglementaire ou dessinée), de les exporter (tableur ou SIG) ou d'éditer la donnée source si une application web est disponible pour le protocole source
-			</p>
-			<p>
-			3 - Export partenaires
-			</p>
-			<p>
-			Une vue par partenaire...
-			...
-			</p>
-			<p>
-			4 - Taxref
-			</p>
-			<p>
-			Toutes les données s'appuient sur Taxref....
-			...
-			</p>
-			<p>
-		</div>
-		
-		
-		</div>
 	</section>
 	<!-- /Section: about -->
-	
 	
 	<!-- Section: services -->
     <section id="service" class="home-section text-center">
@@ -209,6 +176,186 @@
 	</section>
 	<!-- /Section: services -->
 	
+	
+	<section id="principes" class="home-section text-center bg-gray">
+		
+		<div class="heading-about marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+		
+					<div class="section-heading">
+					<h2>Principes</h2>
+					<p>Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has</p>
+					</div>
+			
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<div class="container">		
+			<div>
+				<p><img src="https://github.com/PnEcrins/FF-synthese/raw/master/docs/images/schema-general.jpg"/></p>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-6 col-md-6">
+				
+					<div class="service-box">
+						<div class="service-icon">
+							<i class="fa fa-edit fa-3x"></i>
+						</div>
+						<div class="service-desc">
+							<h5>1- Les données sources de chaque protocole</h5>
+							<p>
+								<ul>
+									<li>Chaque protocole dispose d'un schéma dédié dans la BDD.</li>
+									<li>Il est possible de créer autant de protocoles (et donc de schémas) que souhaité.</li>
+									<li>Les tables de chaque schéma des protocoles correspondent aux besoins et aux champs spécifiques de ceux-ci.</li>
+									<li>Ces tables des protocoles sont alimentées directement par des applications web ou mobiles ou indirectement par des sources externes (tableurs, BDD, SIG, GPX...), éventuellement automatisés par un ETL (Extract Transform Load comme Talend).</li>
+									<li>L'application est fournie avec les schémas et applications web des protocoles Contact faune vertébrés, invertébrés et mortalité.</li>
+									<li>A chaque fois qu'une donnée (observation) est insérée, modifiée ou supprimée dans une table d'un des protocoles, un trigger (déclencheur automatique dans la BDD) lance une requête SQL venant mettre à jour le schéma de synthèse.</li>
+									<li>Les protocoles sont listés dans la table bib_sources du schéma synthese.</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+		
+				</div>
+				<div class="col-sm-6 col-md-6">
+		
+					<div class="service-box">
+						<div class="service-icon">
+							<i class="fa fa-archive fa-3x"></i>
+						</div>
+						<div class="service-desc">
+							<h5>2 - La synthèse des données de tous les protocoles</h5>
+							<p>
+								<ul>
+									<li>Elle regroupe les données de tous les protocoles avec uniquement leurs champs communs "Qui a vu Quoi Où et Quand + Comment ?" (Observateur, taxon, localisation, date, protocole).</li>
+									<li>Elle est alimentée automatiquement à chaque fois qu'une donnée est saisie dans le schéma d'un protocole.</li>
+									<li>L'application fournie permet de consulter l'ensemble de ces données, de les filtrer (par taxon, statut, date, période, observateur, source, commune, secteur, zone réglementaire ou dessinée), de les exporter (tableur ou SIG) ou d'éditer la donnée source si une application web est disponible pour le protocole source.</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 col-md-6">
+				
+					<div class="service-box">
+						<div class="service-icon">
+							<i class="fa fa-share fa-3x"></i>
+						</div>
+						<div class="service-desc">
+							<h5>3 - Export partenaires</h5>
+							<p>
+								<ul>
+									<li>L'application permet de préparer et d'automatiser les exports à destination des partenaires (SINP, INPN, LPO...).</li>
+									<li>Pour chaque partenaire, une vue spécifique est créée, permettant de définir les données à rendre accessible.</li>
+									<li>Chaque partenaire peut ainsi récupérer les données à jour quand ils le souhaitent et en toute autonomie.</li>
+									<li>A l'inverse il est possible d'intégrer dans la synthèse les données provenant de partenaires pour pouvoir les consulter au côté des données provenent des protocoles internes.</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+		
+				</div>
+				<div class="col-sm-6 col-md-6">
+		
+					<div class="service-box">
+						<div class="service-icon">
+							<i class="fa fa-plug fa-3x"></i>
+						</div>
+						<div class="service-desc">
+							<h5>4 - TAXREF</h5>
+							<p>
+								<ul>
+									<li>Toutes les données s'appuient sur le référentiel taxonomique <a href="http://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref" target="_blank">TAXREF</a> réalisé dans le cadre de l'<a href="http://inpn.mnhn.fr/" target="_blank">INPN.</a></li>
+									<li>En se basant sur TAXREF pour identifier chaque espèce, toutes les observations sont rattachées à un identifiant d'espèce unique et commun au niveau national.</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+	
+	<!-- Section: contexte -->
+    <section id="contexte" class="home-section text-center">
+		
+		<div class="heading-about marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+		
+					<div class="section-heading">
+					<h2>Contexte</h2>
+					<p>Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has</p>
+					</div>
+			
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-4">
+			
+                <div class="service-box">
+					<div class="service-icon">
+						<img src="img/bdd-web.jpg" width="200px"/>
+					</div>
+					<div class="service-desc">
+						<h5>2012</h5>
+						<p>Le Parc national des Ecrins modernise et réorganise ses bases de données faune et flore autour de la synthèse.</p>
+						<p>Il développe alors les applications CONTACT FAUNE vertébrés, invertébrés et mortalité ainsi que l'application SYNTHESE.</p>
+					</div>
+                </div>
+	
+            </div>
+			<div class="col-sm-4 col-md-4">
+	
+                <div class="service-box">
+					<div class="service-icon">
+						<img src="img/logo-pnx.jpg" width="200px"/>
+					</div>
+					<div class="service-desc">
+						<h5>Début 2014</h5>
+						<p>L'ensemble des parcs nationaux retient ce principe pour l'organisation de ses bases de données faune et flore.</p>
+						<p>...</p>
+					</div>
+                </div>
+
+            </div>
+			<div class="col-sm-4 col-md-4">
+
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-github fa-5x"></i>
+					</div>
+					<div class="service-icon">
+						<i class="fa fa-code fa-5x"></i>
+					</div>
+					<div class="service-desc">
+						<h5>Décembre 2014</h5>
+						<p><a href="https://github.com/gildeluermoz" "_blank">Gil Deluermoz</a> et <a href="https://github.com/amandine-sahl" "_blank">Amandine Sahl</a>, développeurs du PnEcrins et PnCévennes, se réunissent pour travailler une semaine sur la refonte de l'applicatin pour la rendre plus générique et ainsi faciliter son déploiement dans les différents parcs nationaux mais aussi dans d'autres structures souhaitant les utiliser.</p>
+						<p>Ils publient l'application sur la forge <a href="https://github.com/PnEcrins/FF-synthese" "_blank">Github</a>, y font de nombreuses évolutions aboutissant à la <a href="https://github.com/PnEcrins/FF-synthese/releases" target="_blank">version 1.1.0</a>, documentent le <a href="http://ff-synthese.rtfd.org" target="_blank">processus d'installation</a> et proposent une <a href="https://github.com/PnEcrins/FF-synthese/wiki/Bilan-premi%C3%A8re-semaine-de-d%C3%A9veloppement-(12-12-2014)" target="">roadmap</a>.
+					</div>
+                </div>
+			
+            </div>
+        </div>		
+		</div>
+	</section>
+	<!-- /Section: contexte -->
 		
 	<!-- Section: works -->
     <section id="captures" class="home-section text-center bg-gray">
