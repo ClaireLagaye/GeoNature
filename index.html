@@ -2,166 +2,410 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Faune - Flore Synthèse</title>
+    <title>FF-Synthèse</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body data-spy="scroll">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">FAUNE - FLORE</span> Synthèse
-                </a>
-            </div>
+<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li class="gn-search-item">
+									<input placeholder="Rechercher" type="search" class="gn-search">
+									<a class="gn-icon gn-icon-search"><span>Rechercher</span></a>
+								</li>
+								<li><a href="#apropos" class="gn-icon gn-icon-download">A propos</a></li>
+								<li><a href="#equipe" class="gn-icon gn-icon-cog">L'équipe</a></li>
+								<li><a href="#service" class="gn-icon gn-icon-cog">Fonctionnalités</a></li>
+								<li><a href="#captures" class="gn-icon gn-icon-help">Captures</a></li>
+								<li><a href="#contact" class="gn-icon gn-icon-archive">Contact</a></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li><a href="index.html">FF-SYNTHESE</a></li>
+				<li><ul class="company-social">
+                            <li class="social-facebook"><a href="https://www.facebook.com/parcnationaldesecrins" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="social-twitter"><a href="https://twitter.com/PnEcrins" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social-dribble"><a href="http://www.ecrins-parcnational.fr" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                            <li class="social-google"><a href="https://github.com/PnEcrins/FF-synthese" target="_blank"><i class="fa fa-github"></i></a></li>
+                        </ul>	</li>
+			</ul>
+	</div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">A propos</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#download">Télécharger</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+	<!-- Section: intro -->
+    <section id="intro" class="intro">
+		<div class="slogan">
+			<h1>Faune-flore Synthèse</h1>
+			<p>Une application opensource de gestion des données naturalistes. Créée par les parcs nationaux de France.</p>
+			<a href="#apropos" class="btn btn-skin scroll">En savoir plus</a>
+		</div>	
+    </section>
+	<!-- /Section: intro -->
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">FF-Synthèse</h1>
-                        <p class="intro-text">Une application opensource de gestion des données naturalistes.<br>Créée par les parcs nationaux de France.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+	<!-- Section: about -->
+    <section id="apropos" class="home-section text-center bg-gray">
+		<div class="heading-about marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+		
+					<div class="section-heading">
+						<h2>A propos</h2>
+						<p>Application de synthèse des observations faune et flore.</p>
+						<p>Elle regroupe toutes les données des différents protocoles FAUNE et FLORE en les limitant au niveau QUI QUOI QUAND OU.</p>
+						<p>Principe général : Un protocole = Un outil = Une BDD + Une BDD et une application de SYNTHESE regroupant les données des différents protocoles sur la base des champs communs à tous les protocoles (QUI a vu QUOI, OU et QUAND).</p>
+						<p>Code source, suivi des versions et des tickets sur <a href="https://github.com/PnEcrins/FF-synthese" target="_blank">https://github.com/PnEcrins/FF-synthese</a></p>
+						<p>Documentation (serveur, applications, base de données) sur <a href="http://ff-synthese.rtfd.org" target="_blank">http://ff-synthese.rtfd.org</a></p>
+					</div>
+			
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+		
+		<div class="row">
+			<p><img src="https://github.com/PnEcrins/FF-synthese/raw/master/docs/images/schema-general.jpg"/></p>
+		</div>
+		
+        <div class="row" id="equipe">
+            <h2>L'équipe</h2>
+			<p>De choc !</p>
+			<div class="col-xs-6 col-sm-3 col-md-3">
+
+                <div class="team boxed-grey">
+                    <div class="inner">
+						<h5>Amandine Sahl</h5>
+                        <p class="subtitle">Développeuse déchainée</p>
+                        <div class="avatar"><img src="img/team/1.jpg" alt="" class="img-responsive" /></div>
                     </div>
                 </div>
+		
             </div>
-        </div>
-    </header>
+			<div class="col-xs-6 col-sm-3 col-md-3">
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>A propos de FF-synthèse</h2>
-                <p>Application de synthèse des observations faune et flore.</p>
-                <p>Elle regroupe toutes les données des différents protocoles FAUNE et FLORE en les limitant au niveau QUI QUOI QUAND OU.</p>
-                <p>Principe général : Un protocole = Un outil = Une BDD + Une BDD et une application de SYNTHESE regroupant les données des différents protocoles sur la base des champs communs à tous les protocoles (QUI a vu QUOI, OU et QUAND).</p>
-				<p><img src="https://github.com/PnEcrins/FF-synthese/raw/master/docs/images/schema-general.jpg"/></p>
-			</div>
-        </div>
-    </section>
+                <div class="team boxed-grey">
+                    <div class="inner">
+						<h5>Kisito Cendrier</h5>
+                        <p class="subtitle">Serbo-croate non identifié</p>
+                        <div class="avatar"><img src="img/team/2.jpg" alt="" class="img-responsive" /></div>
+                    </div>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Télécharger FF-Synthèse</h2>
-                    <p>Vous pouvez télécharger librement l'application FF-Synthèse depuis Github.</p>
-                    <a href="https://github.com/PnEcrins/FF-synthese" class="btn btn-default btn-lg">Visiter le Github.</a>
+				</div>
+            </div>
+			<div class="col-xs-6 col-sm-3 col-md-3">
+		
+                <div class="team boxed-grey">
+                    <div class="inner">
+						<h5>Camille MONCHICOURT</h5>
+                        <p class="subtitle">Touriste</p>
+                        <div class="avatar"><img src="img/team/3.jpg" alt="" class="img-responsive" /></div>
+                    </div>
                 </div>
+		
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+			<div class="col-xs-6 col-sm-3 col-md-3">
+		
+                <div class="team boxed-grey">
+                    <div class="inner">
+						<h5>Gil Deluermoz</h5>
+                        <p class="subtitle">Développeur envoûté</p>
+                        <div class="avatar"><img src="img/team/4.jpg" alt="" class="img-responsive" /></div>
+                    </div>
+                </div>
+	
+            </div>
+        </div>		
+		</div>
+	</section>
+	<!-- /Section: about -->
+	
+	
+	<!-- Section: services -->
+    <section id="service" class="home-section text-center">
+		
+		<div class="heading-about marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+		
+					<div class="section-heading">
+					<h2>Fonctionnalités</h2>
+					<p>Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has</p>
+					</div>
+			
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contactez l'équipe</h2>
-                <p>Mais d'abord <a href="http://ff-synthese.readthedocs.org/">Read The Fucking Doc</a> !</p>
-                <p><a href="mailto:toto@toto.fr">toto@toto.fr</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/PnEcrins" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/PnEcrins/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/parcnationaldesecrins" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                </ul>
-				<br/><br/>
-				<p>
-					<a href="http://www.ecrins-parcnational.fr" target="_blank"><img src="img/logo-pne.jpg"></a> <a href="http://www.cevennes-parcnational.fr/" target="_blank"><img src="img/logo-pnc.jpg"></a>
-				</p>
+            <div class="col-sm-3 col-md-3">
+			
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-edit fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<h5>Saisir</h5>
+						<p>L'application permet de saisir les données contact faune et flore depuis une interface web.</p>
+					</div>
+                </div>
+	
             </div>
+			<div class="col-sm-3 col-md-3">
+	
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-mobile fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<h5>Embarquer</h5>
+						<p>Une application mobile permet de réaliser la saisie directement sur le terrain, embarquant les cartes IGN.</p>
+					</div>
+                </div>
+
+            </div>
+			<div class="col-sm-3 col-md-3">
+
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-archive fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<h5>Centraliser</h5>
+						<p>L'ensemble des données des différents protocoels sont stockées dans une base de données robutes et accessible en temps réel.</p>
+					</div>
+                </div>
+			
+            </div>
+			<div class="col-sm-3 col-md-3">
+	
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-share fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<h5>Partager</h5>
+						<p>Les données centralisées peuvent être directement accessibles par les partenaires avec une gestion des droits.</p>
+					</div>
+                </div>
+			
+            </div>
+        </div>		
+		</div>
+	</section>
+	<!-- /Section: services -->
+	
+		
+	<!-- Section: works -->
+    <section id="captures" class="home-section text-center bg-gray">
+		<div class="heading-works marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+		
+					<div class="section-heading">
+					<h2>CAPTURES</h2>
+					<p>Un aperçu du tableau de bord, de l'application de consultation, de saisie et mobile.</p>
+					</div>
+		
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12" >
+
+                    <div class="row gallery-item">
+                        <div class="col-md-3">
+							<a href="img/works/1.jpg" title="Tableau de bord" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/1.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3">
+							<a href="img/works/2.jpg" title="Applicatino de consultation (synthèse)" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/2.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3">
+							<a href="img/works/3.jpg" title="Saisie des observations faune" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/3.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3">
+							<a href="img/works/4.jpg" title="Saisie Faune mobile" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/4.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<!-- 
+						<div class="col-md-3">
+							<a href="img/works/5.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/5.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3">
+							<a href="img/works/6.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/6.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3">
+							<a href="img/works/7.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/7.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3">
+							<a href="img/works/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/8.jpg" class="img-responsive" alt="img">
+							</a>
+						</div>
+						-->
+					</div>
+	
+                </div>
+            </div>	
+		</div>
+	</section>
+	<!-- /Section: works -->
+
+	<!-- Section: contact -->
+    <section id="contact" class="home-section text-center">
+		<div class="heading-contact marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+	
+					<div class="section-heading">
+					<h2>Contact</h2>
+					<p>Mais d'abord <a href="http://ff-synthese.readthedocs.org/">Read The Fucking Doc</a> !</p>
+					</div>
+				
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+
+    <div class="row">
+        <div class="col-lg-8 col-md-offset-2">
+            <div class="boxed-grey">
+                <form id="contact-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Nom</label>
+                            <input type="text" class="form-control" id="name" placeholder="Saisir votre nom" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Courriel</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="Saisir votre courriel" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Sujet</label>
+                            <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">Choisir:</option>
+                                <option value="service">Aide</option>
+                                <option value="suggestions">Installation</option>
+                                <option value="product">Contribution</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+                            Envoyer</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+			
+			<div class="widget-contact row">
+				 <div class="col-lg-6">
+				<address>
+				  <strong>Parc national des Ecrins</strong><br>
+				  Domaine de Charance<br>
+				  05000 GAP<br>
+				  <abbr title="Phone">Tel:</abbr> (+33) 4-92-40-20-30
+				</address>
+				</div>
+				
+				<div class="col-lg-6">
+				<address>
+				  <strong>Email</strong><br>
+				  <a href="mailto:#">email.name@example.com</a><br />
+				   <a href="mailto:#">name.name@example.com</a>
+				</address>	
+			
+				</div>
+			</div>	
         </div>
-    </section>
 
-    <!-- Map Section -->
-	<!-- <div id="map"></div> -->
+    </div>	
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Parc national des Ecrins 2014</p>
-        </div>
-    </footer>
+		</div>
+	</section>
+	<!-- /Section: contact -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+		
+					<p>Copyright &copy; Parc national des Ecrins - 2014</a></p>
+				</div>
+			</div>	
+		</div>
+	</footer>
 
-    <!-- Bootstrap Core JavaScript -->
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-	<!--     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
-
+    <script src="js/jquery.easing.min.js"></script>	
+	<script src="js/classie.js"></script>
+	<script src="js/gnmenu.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+	<script src="js/stellar.js"></script>
     <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 
